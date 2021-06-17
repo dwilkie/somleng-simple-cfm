@@ -119,7 +119,7 @@ jobs:
           bundler-cache: true
 
       - name: Download Documentation Source
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v2.0.10
         with:
           name: documentation_source
           path: source
@@ -175,7 +175,7 @@ jobs:
           ruby-version: '2.7'
 
       - name: Download Assets
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v2.0.10
         with:
           name: assets
           path: public
